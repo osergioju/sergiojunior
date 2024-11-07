@@ -1,0 +1,217 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.flex-loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraum-load, .barradois-load {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.barraum-load {
+    background: #fffbf4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.barradois-load {
+    background: #bd1320;
+}
+
+.content-loader {
+    width: 1000vw;
+    height: 3000vh;
+    text-align: center;
+    position: relative;
+    z-index: 8;
+}
+
+.barraum-load span, .barradois-load span {
+    font-weight: 900;
+    font-family: 'Tusker Grotesk 5700';
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.barraum-load span {
+    color: #bd1320;
+    transform: translate(0px, 40px);
+}
+
+.barradois-load span {
+    color: #f9f4ed;
+    transform: translate(0px, -35px);
+    display: inline-block;
+}
+
+.content-loader.rotate {
+    transform: rotate(-90deg);
+    transition: .4s linear;
+}
+
+.content-loader.rotate .barraum-load {
+    transform: translate(1000%, 0px);
+    transition: 0.8s linear;
+    transition-delay: 2s;
+}
+
+.content-loader.rotate .barradois-load {
+    transform: translate(-1000%, 0px);
+    transition: 0.8s linear;
+    transition-delay: 2s;
+}
+
+/***
+ABA 1 ******
+**********/
+.escola-de-athenas img {
+    width: 100%;
+    padding: 0 10px;
+}
+
+section.sesseion.firts-session {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    background: #fffbf4;
+}
+
+.sessao_inicial h1 {
+    font-size: 38px;
+    font-family: 'Tusker Grotesk 5700';
+    text-transform: uppercase;
+    color: #bd1320;
+}
+
+.sessao_inicial a {
+    color: #bd1320;
+    font-weight: 200;
+    text-transform: lowercase;
+    padding: 10px 0;
+    display: inline-block;
+    font-family: 'Tusker Grotesk 6600';
+}
+
+section.sesseion.second-session {
+    background: #bd1320;
+    padding: 100px 0;
+}
+
+section.sesseion.second-session .title-common h2 {
+    font-size: 38px;
+    color: #fffbf4;
+    font-family: 'Tusker Grotesk 5700';
+}
+
+section.sesseion.second-session .title-common h2 u {
+    display: block;
+    font-size: 18pxa;
+    font-family: 'Tusker Grotesk 6600';
+    padding: 10px 0 0 0;
+}
+
+.title-common p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.unicagride-site {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.covergrid-site {
+    width: 100%;
+    height: 300px;
+    background: black;
+}
+
+.descgrid-site {
+    padding: 20px;
+    background: #fffbf4;
+}
+
+.grid-allsites {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.descgrid-site h2 {
+    font-size: 34px;
+    font-family: 'Tusker Grotesk 5700';
+    text-transform: uppercase;
+    color: #bd1320;
+}
+
+.descgrid-site p {
+    color: #bd1320;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+.descgrid-site a {
+    color: #bd1320;
+    font-weight: 200;
+    text-transform: lowercase;
+    padding: 10px 0;
+    display: inline-block;
+    font-family: 'Tusker Grotesk 6600';
+}
+
+@media(min-width: 1024px){
+    section.sesseion.firts-session {
+        justify-content: center;
+    }
+    
+    .escola-de-athenas {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        top: 0;
+    }
+    
+    .escola-de-athenas img {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        width: auto;
+    }
+    
+    .sessao_inicial {
+        width: 50%;
+    }
+    
+    .sessao_inicial h1 {
+        font-size: 76px;
+    }
+    
+    .sessao_inicial a {
+        font-size: 16px;
+    }
+}
